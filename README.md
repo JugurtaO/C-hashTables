@@ -18,14 +18,14 @@ Finally it prints out the table with all corresponding players in the txt file.
    .
 
    └── src
-        ├── hash_table.c
-        ├── hash_table.h
-        ├── hash_table.o
-        ├── main
-        ├── main.c
-        ├── main.o
-        ├── makefile
-        └── players.txt
+         ├── hash_table.c
+         ├── hash_table.h
+         ├── hash_table.o
+         ├── main
+         ├── main.c
+         ├── main.o
+         ├── makefile
+         └── players.txt
     
         
 1 directory, 9 files
