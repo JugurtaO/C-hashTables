@@ -1,6 +1,7 @@
 # C-hashTables
 #Description
-__This is C-hashTables implementation __ 
+
+   __This is C-hashTables implementation __ 
 
 The main program processes with initing the hashTable boxes to NULL and then  reads the txt file .
 It stores all players with there ages in the correct index box corresponding to the value calculated by the hash function.
