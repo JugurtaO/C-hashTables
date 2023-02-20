@@ -16,7 +16,6 @@ Finally it prints out the table with all corresponding players in the txt file.
 #Working directory structure
 
    .
-
    └── src
    
          ├── hash_table.c
