@@ -12,7 +12,7 @@ If it reaches the end of the table without finding a free cell, it does not inse
 Finally it prints out the table with all corresponding players in the txt file.
 
 .
-├── README
+├── README   
 └── src
     ├── hash_table.c
     ├── hash_table.h
@@ -22,3 +22,4 @@ Finally it prints out the table with all corresponding players in the txt file.
     ├── main.o
     ├── makefile
     └── players.txt
+  
