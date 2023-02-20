@@ -17,6 +17,7 @@ Finally it prints out the table with all corresponding players in the txt file.
 .
 
 ├── README  
+
     └── src
     ├── hash_table.c
     ├── hash_table.h
@@ -26,6 +27,7 @@ Finally it prints out the table with all corresponding players in the txt file.
     ├── main.o
     ├── makefile
     └── players.txt
+    
         
 1 directory, 9 files
 
