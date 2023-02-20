@@ -8,7 +8,7 @@ typedef struct{
     int age;
 } player;
 
-void init_hash_table(player * table[]);           // init to NULL
+void init_hash_table(player * table[]);            // init to NULL
 int hash(player *pl);             //returns the table Index where concerned data will be stored
 player* hash_lookup(player *pl,player * table[]);  //returns a pointer to the player struct if exists or NULL if not
 int hash_insert(player *pl,player * table[]);      //returns a boolean true if player has been successfully inserted of false if not
