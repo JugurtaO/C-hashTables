@@ -14,10 +14,11 @@ If it reaches the end of the table without finding a free cell, it does not inse
 Finally it prints out the table with all corresponding players in the txt file.
 
 #Working directory structure
+
 .
 ├── README  
 
-    └── src
+└── src
         ├── hash_table.c
         ├── hash_table.h
         ├── hash_table.o
