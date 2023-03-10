@@ -1,6 +1,7 @@
-#include "hash_table.h"
+#include "../headers/hash_table.h"
 #include <stdlib.h>
 #include <string.h>
+
 int main (int argc, char **argv){
     if (argc!=2)
         printf("Uses with ./main <file.txt> \n");

@@ -1,6 +1,7 @@
-#include "hash_table.h"
+#include "../headers/hash_table.h"
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 
 

@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 
 #define MAX_SIZE 10
 #define MAX_NAME 128

@@ -1,23 +1,51 @@
-CC=gcc
-CFLAGS=-g -Wall -c
-LDFLAGS=-g -Wall -o
+# liste des fichiers source
+SRC = main.c hash_table.c 
+#SRC = $(wildcard *.c)
 
-exe=main
+# liste des fichiers .o et des dependances (mis dans le repertoire build/)
+OBJ = $(addprefix build/,$(SRC:.c=.o))
+DEP = $(addprefix build/,$(SRC:.c=.d))
 
-all:$(exe)
+# nom du compilateur
+CC = gcc
 
-hash_table.o: hash_table.c  hash_table.h
-main.o:main.c hash_table.h
+# nom de l'executable
+EXE = main
 
-%.o:%.c
-	$(CC) $(CFLAGS) $<
+# flags de compilation (CFLAGS) et d'edition de liens (LDFLAGS)
+CFLAGS +=   -MMD -g -O2
+LDFLAGS= #-lm
 
+# regle principale: generer l'executable
+all: $(OBJ)
+	$(CC) -o $(EXE) $^ $(LDFLAGS)
 
-main: main.o hash_table.o  
+# regle generique pour produire un fichier .o a partir d'un fichier .c
+build/%.o: %.c
+	@mkdir -p build
+	$(CC) $(CFLAGS) -o $@ -c $<
 
-%:%.o
-	$(CC) $(LDFLAGS) $@ $^
+# regle generique pour faire du nettoyage
 clean:
-	rm -f  *.o $(exe)
+	rm -rf build core *.gch
+
+# inclusion automatique du fichier de dependances
+-include $(DEP)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
